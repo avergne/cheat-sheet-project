@@ -1,12 +1,99 @@
-section {
-  background-color: green;
+body {
+    display: block;
+    margin: 0;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header,
+  footer{
+    background-color: aquamarine;
+    padding: 10px 15px;
 }
-#text-section {
-  background-color: blue;
+
+header > h3,
+footer > h5 {
+  display:inline-block;
+  margin: 0;
+
 }
-.red-text {
-  color: red;
+
+header > nav,
+footer > nav {
+  float: right;
+  margin-right: 15px
+
 }
-h2.red-text {
-  font-size: 100px;
+header > nav > ul,
+footer > nav > ul {
+  padding: 0;
+  margin: 0;
+
+}
+header > nav > ul li,
+footer > nav > ul li {
+  float: left;
+  margin: 0 10px;
+  list-style: none;
+}
+header > nav > ul li > a,
+footer > nav > ul li > a {
+  text-decoration: none;
+  color: #333;
+  font-family: fantasy;sans-serif;
+}
+aside {
+    float: left;
+    width: 20%;
+    font-family: herlvetica, sans-serif;
+    margin-top: 40px;
+    position: fixed;
+  }
+
+    aside > ol {
+        padding: 0;
+    }
+
+aside > ol li {
+  list-style: none;
+  margin-bottom: 20%;
+
+}
+aside > ol li > a {
+  text-decoration: none;
+  color: blue;
+  width: 80%;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: .
+  4s;
+
+}
+aside > ol li > a:hover {
+    background-color: aquamarine;
+  }
+main {
+    float: left;
+    width: calc(80% - 60px);
+    background-color: #f7f7f7;
+    margin-top: 42px;
+    margin-left: 20%;
+}
+
+main > section {
+  margin-bottom: 60px;
+
+}
+footer {
+  clear: both;
+  background-color: #ffb6c1;
+
+
 }
